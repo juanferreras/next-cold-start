@@ -14,6 +14,7 @@ export const config = {
 };
 
 export default async function middleware(request: NextRequest) {
+  // return NextResponse.next();
   return new NextResponse(
     `<h1>Hello from Middleware</h1>`,
     { headers: { "content-type": "text/html" } }
